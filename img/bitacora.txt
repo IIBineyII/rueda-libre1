@@ -1,0 +1,13 @@
+URL:http://127.0.0.1:5500/index.html
+Protocolo: http:
+Host:127.0.0.1
+Puerto:5500
+Ruta:/index.html
+Método de petición:GET
+Código de estado:304 Not Modified
+Error: Cannot GET /index.html/promociones.html
+Este error ocurre porque el servidor está buscando una ruta o archivo que no existe en la estructura del proyecto.
+Roles:
+HTML:Es el esqueleto o la base de la casa
+CSS:Es la decoracion/pintura de la casa
+Javascript:Es la electricidad/funcionamiento de las interacciones 
