@@ -68,13 +68,23 @@
                             <option value="electrica">Eléctrica</option>
                         </select>
                     </p>
-
-                    <p>
-                        <label for="cantidad">Cantidad de bicicletas</label><br>
-                        <input type="number" id="cantidad" name="cantidad" min="1" max="10" value="1" required>
-                    </p>
                 </fieldset>
 
+                <fieldset>
+                    <legend>Confirmación</legend>
+                    <p>
+                        <label for="comentarios">Comentarios (opcional)</label><br>
+                        <textarea name="comentarios" id="comentarios" rows="4"></textarea>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        <label for="terminos">Acepto los términos y condiciones</label>
+                    </p>
+
+                    <button type="submit">Enviar reserva</button>
+                </fieldset>
+                
                 
             </form> 
         </section>
