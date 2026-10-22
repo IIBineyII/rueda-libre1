@@ -80,3 +80,57 @@ reservas → correo
 origen:reservas
 destino: correp
 ruta: mailto: hola@ruedalibre.example
+
+-----------------------------------------------------------------------
+  ENCABEZADO                                              
+ 
+-----------------------------------------------------------------------
+  NAVEGACIÓN                                                  
+  [Inicio]  [Rutas] [Reservar]
+-----------------------------------------------------------------------
+                                                                       
+   CONTENIDO PRINCIPAL                                        
+  ------------------------------------------------- ---------------
+    SECCIÓN                                             CONTENIDO   
+                                                        COMPLEMEN-  
+                                                         TARIO
+        
+  -------------------------------------------------        
+    ARTÍCULO:                                 
+           
+                                                  
+    ---------------------  -------------------      
+                                                             
+    SECCIÓN:                 
+                                                        
+            
+  ------------------------------------------------- ---------------
+                                                                       
+-----------------------------------------------------------------------
+  PIE DE PÁGINA (FOOTER)                                           
+  [Información Legal]     [Redes Sociales]     
+-----------------------------------------------------------------------
+
+Pruebas de campo: 
+1. Al no escribir como mínimo 3 caracteres en el nombre sale el error "Alarga el texto a 3 o más caracteres (actualmente usas 2 caracteres).
+
+2. En el campo de correo si no escribo el @ sale: Incluye un signo "@" en la dirección de correo electrónico "adw" no incluye el signo "@".
+
+3. En el mismo campo de correo sí solo dejo el @ aparece: Ingresa texto antes del signo "@". La dirección "@" está incompleta.
+
+4. En el campo documento el escribir menos de 6 dígitos sale: Haz coincidir el formato solicitado. Entre 6 y 10 dígitos, solo números.
+
+5. En el campo de celular al no comenzar con el número 3 sale: Haz coincidir el formato solicitado. Escriba 10 dígitos, empezando por el número 3.
+
+6. Al tratar de Enviar reserva sin seleccionar la fecha de alquiler sale: Debes ingresar un valor válido. El campo está incompleto o contiene una fecha no válida.
+
+7. Al no seleccionar el tipo de bicicleta: Selecciona un elemento de la lista
+
+8. Al no haber chequeado los términos y condiciones: Controla esta casilla si deseas continuar.
+
+
+
+
+
+
+

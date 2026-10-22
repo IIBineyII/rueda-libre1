@@ -42,7 +42,7 @@
 
                     <p>
                         <label for="nombre">Nombre completo</label><br>
-                        <input type="text" id="nombre" autocomplete="name" required>
+                        <input type="text" id="nombre" autocomplete="name" name="nombre" minlength="3" required>
                     </p>
 
                     <p>
@@ -51,13 +51,27 @@
                     </p>
 
                     <p>
-                        <label for="telefono">Teléfono</label><br>
-                        <input type="tel" id="telefono" name="telefono" autocomplete="tel" required> 
+                        <label for="documento">Documento</label><br>
+                        <input type="text" id="documento" name="documento" pattern="[0-9]{6,10}" required title="Entre 6 y 10 dígitos, solo números"
+                        aria-describedby="ayuda-documento">
+                        <br><small id="ayuda-documento">Solo números, entre 6 y qo dígitos. Ej:1020304050</small>
+                        
+                    </p>
+
+                    <p>
+                        <label for="celular">Celular</label><br>
+                        <input type="tel" id="celular" name="celular" autocomplete="tel" inputmode="numeric" pattern="3[0-9]{9}" minlength="10" maxlength="10" title="Escriba 10 dígitos, empezando por el número 3" required
+                        aria-describedby="ayuda-celular">
+                        <br><small id="ayuda-celular">10 dígitos, debe empezar por 3. Ej:3001234567</small> 
                     </p>
                 </fieldset>
 
                 <fieldset>
                     <legend>Tu reserva</legend>
+                    <p>
+                        <label for="fechaalquiler">Fecha de alquiler</label><br>
+                        <input type="date" id="fechaalquiler" name="fechaalquiler" min="2026-11-01" max="2026-12-31" required>
+                    </p>
 
                     <p>
                         <label for="tipo">Tipo de bicicleta</label><br>
@@ -71,10 +85,26 @@
                 </fieldset>
 
                 <fieldset>
+                    <legend>Plan</legend>
+                    <p>
+                        <input type="radio" name="plan" id="plan-facil" value="2h" required>
+                        <label for="plan-facil">2 horas</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="plan" id="plan-medio" value="3h" required>
+                        <label for="plan-medio">3 horas</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="plan" id="plan-medio" value="4h" required>
+                        <label for="plan-dificil">4 horas</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
                     <legend>Confirmación</legend>
                     <p>
                         <label for="comentarios">Comentarios (opcional)</label><br>
-                        <textarea name="comentarios" id="comentarios" rows="4"></textarea>
+                        <textarea name="comentarios" id="comentarios" rows="4" maxlength="300"></textarea>
                     </p>
 
                     <p>
