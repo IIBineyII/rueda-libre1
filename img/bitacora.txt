@@ -128,8 +128,25 @@ Pruebas de campo:
 
 8. Al no haber chequeado los términos y condiciones: Controla esta casilla si deseas continuar.
 
+Hallazgos en código: Habían unas imágenes con una descripción genérica en alt, así que las especifiqué más, separé cada bloque con "ENTER" y organicé la sangría de algunas líneas en el código para que sea más fácil de identificar cada sección por así decirlo.
+
+Colores:
+4,51 o más es Apta para texto normal
+De 3:1 a 4,49:1 Apta solo para texto grande
+Menos de 3:1 No apta
+
+por tanto:
+Texto blanco sobre verde ruta: 5.31:1 = Txt normal
+Texto blanco sobre naranja pedal: 2.21:1 = No apto
+Azul noche sobre crema: 14.82:1 = Txt normal
+Gris Asfalto sobre crema: 5.56:1 = Txt normal
+Verde ruta sobre crema: 4.93:1 = Txt grande
+Naranja pedal sobre crema: 2.05:1 = No apto
+Blanco sobre azul noche: 15.97:1 = Txt normal
 
 
+Bitácora para reto día 2: Para terminar el día 2 tuve que realizar las tareas en casa, se fue la luz en riwi :p
+, sin embargo aprendí principalmente a darle uso a las limitaciones de los campos para que se diligencien con un mínimo de info.
 
 
 
