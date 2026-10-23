@@ -140,7 +140,7 @@ Texto blanco sobre verde ruta: 5.31:1 = Txt normal
 Texto blanco sobre naranja pedal: 2.21:1 = No apto
 Azul noche sobre crema: 14.82:1 = Txt normal
 Gris Asfalto sobre crema: 5.56:1 = Txt normal
-Verde ruta sobre crema: 4.93:1 = Txt grande
+Verde ruta sobre crema: 4.93:1 = Txt grande o txt normal
 Naranja pedal sobre crema: 2.05:1 = No apto
 Blanco sobre azul noche: 15.97:1 = Txt normal
 
