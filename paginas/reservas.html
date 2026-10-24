@@ -8,33 +8,35 @@
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/rueda-libre1/css/styles.css">
 </head>
 
 <body>
-    <nav aria-labelledby="seccionreservas">
-        <ul>
-            <li><a href="/rueda-libre1/index.html"style="font-size: 20px;">Inicio</a></li> 
-            <li><a href="/rueda-libre1/paginas/tarifas.html"style="font-size: 20px;">Tarifas y rutas</a></li>
-        </ul>
-    </nav>
-
-    <section aria-labelledby="icono"  style="display: flex; justify-content: center; align-items: center;">
-        <img src="/rueda-libre1/img/images.jpg" alt="icono" width="500" height="350">
-    </section>
 
     <header>
+        <nav aria-labelledby="seccionreservas">
+            <ul class="seccionreservas">
+                <li><a href="/rueda-libre1/index.html"style="font-size: 20px;">Inicio</a></li> 
+                <li><a href="/rueda-libre1/paginas/tarifas.html"style="font-size: 20px;">Tarifas y rutas</a></li>
+            </ul>
+        </nav>
+
+        <section aria-labelledby="icono"  style="display: flex; justify-content: center; align-items: center;">
+            <img src="/rueda-libre1/img/images.jpg" alt="icono" width="500" height="350">
+        </section>
+
         <h1>Reserva Tu bicicleta</h1>
-        <p>Correo electronico:</p><a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>
+        <p>Correo electronico:</p><a class="correoheader" href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>
+
     </header>
   
     <main>
         <aside aria-labelledby="horario">
-            <dl>
-                <dt>Lunes a viernes</dt>
+            <dl class="horario">
+                <dt><strong>Lunes a viernes</dt>
                 <dd>De 7:00 a.m. a 7:00 p.m.</dd>
                 <dt>Sábados, domingos y festivos</dt>
-                <dd>De 6:00 a.m. a 2:00 p.m.</dd>
+                <dd>De 6:00 a.m. a 2:00 p.m.</strong></dd>
             </dl>
         </aside>
         

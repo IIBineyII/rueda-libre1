@@ -148,6 +148,11 @@ Blanco sobre azul noche: 15.97:1 = Txt normal
 Bitácora para reto día 2: Para terminar el día 2 tuve que realizar las tareas en casa, se fue la luz en riwi :p
 , sin embargo aprendí principalmente a darle uso a las limitaciones de los campos para que se diligencien con un mínimo de info.
 
+CSS:
+Eliminé los style que tenia en las imágenes y en las tablas de tarifas y rutas, las modifiqué a través del CSS.
+
+En el párrafo de la sección ¿Quiénes somos?, la propiedad font-family aparece en Computed como Open Sans, heredada del body, sin que el párrafo tenga esa regla. En cambio, background-color del body es 
+#FAF6EF, pero en el párrafo es transparent: no se hereda.
 
 
 
