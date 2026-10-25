@@ -165,6 +165,11 @@ Después	766 px	        32 px	2 px	800 px
 
 Con content-box el width: 100% se aplicaba solo al contenido y el relleno y el borde se sumaban por fuera, haciendo la tarjeta más ancha que su contenedor. Con border-box, el 100 % incluye todo y la tarjeta encaja.
 
+cierre de semana 1:
+Reto 1:Aprendí a darle forma al HTML, con algunos errores de organización
+Reto 2:Aprendí a organizar el HTML como se debe, con cada bloque, sección, artículo, y sangría de código bien organizada.
+Reto 3:Aprendí a darle uso a CSS dándole uso a las clases e id para modificar el estilo en las páginas.
+
 
 
 

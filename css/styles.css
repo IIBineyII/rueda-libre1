@@ -43,7 +43,10 @@ button, input, select, textarea {
     font: inherit;
 }
 
-
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 small {
     color: var(--color-gris-asfalto);
@@ -73,14 +76,6 @@ main {
     text-align: center;
 }
 
-.manu ul {
-    display: flex;
-    flex-wrap: flex;
-    gap: var(--spacing-md);
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 
 .Principal, .secciontarifa, .seccionreservas {
     display: flex;
@@ -132,10 +127,6 @@ textarea {
 }
 
 
-button [type="submit"]:hover {
-    background-color: var(--color-azul-noche);
-}
-
 #menu a {
     display: block;
     color: var(--color-gris-asfalto);
@@ -150,9 +141,6 @@ button [type="submit"]:hover {
     border-bottom-color: var(--color-verde-ruta);
  }
 
-.menu {
-    background-color: var(--color-crema);
-}
 
 #menu {
     display: flex;
@@ -164,8 +152,7 @@ button [type="submit"]:hover {
     background-color:  var(--color-crema);
 }
 
-#menu a:hover,
-#menu a:focus {
+#menu a:hover{
     background-color: var(--color-naranja-pedal);
     color: var(--color-azul-noche);
 }
@@ -217,7 +204,7 @@ button:focus {
     border-color: var(--color-azul-noche);
 }
 
-.nuestrosreserva a{
+.linksmain a{
     color: var(--color-verde-ruta);
 }
 
@@ -309,3 +296,11 @@ button[type="submit"] {
     cursor: pointer;
 }
 
+.boton-whatsapp {
+    position: fixed;
+    right: var(--spacing-md);
+    bottom: var(--spacing-md);
+    z-index: var(--spacing-md);
+}
+
+footer {padding-bottom: 5rem;}
