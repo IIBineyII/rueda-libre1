@@ -154,5 +154,8 @@ Eliminé los style que tenia en las imágenes y en las tablas de tarifas y rutas
 En el párrafo de la sección ¿Quiénes somos?, la propiedad font-family aparece en Computed como Open Sans, heredada del body, sin que el párrafo tenga esa regla. En cambio, background-color del body es 
 #FAF6EF, pero en el párrafo es transparent: no se hereda.
 
+Arreglo de conflicto:
+Agrego en la parte más baja del css usando el "#" para que tenga más fuerza los comandos del menú de navegación, y posteriormente le agregue las respectivas secciones de focus y hover.
+
 
 
