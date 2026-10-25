@@ -157,5 +157,14 @@ En el párrafo de la sección ¿Quiénes somos?, la propiedad font-family aparec
 Arreglo de conflicto:
 Agrego en la parte más baja del css usando el "#" para que tenga más fuerza los comandos del menú de navegación, y posteriormente le agregue las respectivas secciones de focus y hover.
 
+info de medidas de CSS:
+
+Momento	Contenido	Relleno	Borde	Total
+Antes	800 px	        32 px	2 px	834 px (se pasa del contenedor)
+Después	766 px	        32 px	2 px	800 px	
+
+Con content-box el width: 100% se aplicaba solo al contenido y el relleno y el borde se sumaban por fuera, haciendo la tarjeta más ancha que su contenedor. Con border-box, el 100 % incluye todo y la tarjeta encaja.
+
+
 
 

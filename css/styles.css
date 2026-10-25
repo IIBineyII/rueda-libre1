@@ -14,6 +14,11 @@
     --spacing-lg: 2rem;
     --spacing-1x: 3rem;
 
+*,
+*::before
+*::after {
+    box-sizing: border-box;
+}
 }
 
 
@@ -98,16 +103,6 @@ a {
     align-items: center;
 }
 
-th, td {
-    border: 1px solid var(--color-azul-noche);
-    padding: var(--spacing-sm);
-    text-align: left;
-}
-
-thead th {
-    background-color: var(--color-azul-noche);
-    color:  var(--color-blanco);
-}
 
 fieldset {
     margin-bottom: var(--spacing-lg);
@@ -225,3 +220,92 @@ button:focus {
 .nuestrosreserva a{
     color: var(--color-verde-ruta);
 }
+
+.portada {
+    min-height: 60hv;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tarjeta {
+    width: 100%;
+    background-color: var(--color-blanco);
+    color: var(--color-azul-noche);
+    border: 1px solid var(--color-gris-asfalto);
+    border-radius: 0.75rem;
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.tarjeta img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: var(--spacing-lg);
+}
+
+caption {
+    text-align: left;
+    font-weight: 700;
+    padding: var(--spacing-sm) 0;
+}
+th, td {
+    border: 1px solid var(--color-gris-asfalto);
+    padding: var(--spacing-sm) var(--spacing-md);
+    text-align: left;
+}
+
+thead {
+    border: 1px solid var(--color-gris-asfalto);
+    padding: var(--spacing-sm) var(--spacing-md);
+    text-align: left;
+}
+
+form {
+    margin: 0 0 var(--spacing-lg);
+    padding: var(--spacing-md);
+    border: 1px solid var(--color-gris-asfalto);
+}
+
+fieldset {
+    margin: 0 0 var(--spacing-md);
+}
+
+label {
+    display: block;
+    margin-bottom: var(--spacing-md);
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: var(--spacing-sm);
+    border: 1px solid var(--color-gris-asfalto);
+}
+
+button[type="submit"] {
+    background-color: var(--color-verde-ruta);
+    border: none;
+    border-radius: 0.375;
+    padding: var(--spacing-md);
+    font-size: 700;
+    cursor: pointer;
+}
+
