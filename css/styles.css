@@ -59,10 +59,7 @@ footer {
     padding: var(--spacing-lg); 
 }
 
-header img {
-    width: "500";
-    height: "350";
-}
+
 
 .correoheader,
 footer a, .contacto a {
@@ -217,9 +214,14 @@ button:focus {
     min-height: 60hv;
 }
 
-img {
+header img {
+    display: block;
     max-width: 100%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    object-fit: cover;
 }
 
 .tarjeta {
@@ -308,6 +310,14 @@ button[type="submit"] {
     right: var(--spacing-md);
     bottom: var(--spacing-md);
     z-index: var(--spacing-md);
+    background-color: var(--color-verde-ruta);
+    border: none;
+    border-radius: 0.375;
+    padding: var(--spacing-md);
+    font-size: 700;
+    cursor: pointer;
+    color: var(--color-blanco);
 }
 
 footer {padding-bottom: 5rem;}
+
