@@ -59,6 +59,10 @@ footer {
     padding: var(--spacing-lg); 
 }
 
+header img {
+    width: "500";
+    height: "350";
+}
 
 .correoheader,
 footer a, .contacto a {
