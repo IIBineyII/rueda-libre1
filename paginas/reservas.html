@@ -31,103 +31,116 @@
         <h1>Reserva Tu bicicleta</h1>
         </section>
 
-        <aside aria-labelledby="horario">
-            <dl class="horario">
-                <h2>Horarios</h2>
-                <dt><strong>Lunes a viernes</dt>
-                <dd>De 7:00 a.m. a 7:00 p.m.</dd>
-                <dt>Sábados, domingos y festivos</dt>
-                <dd>De 6:00 a.m. a 2:00 p.m.</strong></dd>
-            </dl>
-        </aside>
-        
-        <section aria-labelledby="Formulario de reserva">
-            <h2>Formulario de reserva</h2>
+        <section class="reservascolumnas" >
 
-            <form action="/paginas/reservas.html" method="post" aria-labelledby="titulo-reserva">
-                <fieldset>
-                    <legend>Tus datos</legend>
+            
+            <article aria-labelledby="Formulario de reserva">
+                <h2>Formulario de reserva</h2>
 
-                    <p>
-                        <label for="nombre">Nombre completo</label><br>
-                        <input type="text" id="nombre" autocomplete="name" name="nombre" minlength="3" required>
-                    </p>
+                <form action="/paginas/reservas.html" method="post" aria-labelledby="titulo-reserva">
+                    <fieldset>
+                        <legend>Tus datos</legend>
 
-                    <p>
-                        <label for="correo">Correo electrónico</label><br>
-                        <input type="email" id="correo" name="correo" autocomplete="email" required>
-                    </p>
+                        <p>
+                            <label for="nombre">Nombre completo</label><br>
+                            <input type="text" id="nombre" autocomplete="name" name="nombre" minlength="3" required>
+                        </p>
 
-                    <p>
-                        <label for="documento">Documento</label><br>
-                        <input type="text" id="documento" name="documento" pattern="[0-9]{6,10}" required title="Entre 6 y 10 dígitos, solo números"
-                        aria-describedby="ayuda-documento">
-                        <br><small id="ayuda-documento">Solo números, entre 6 y qo dígitos. Ej:1020304050</small>
-                        
-                    </p>
+                        <p>
+                            <label for="correo">Correo electrónico</label><br>
+                            <input type="email" id="correo" name="correo" autocomplete="email" required>
+                        </p>
 
-                    <p>
-                        <label for="celular">Celular</label><br>
-                        <input type="tel" id="celular" name="celular" autocomplete="tel" inputmode="numeric" pattern="3[0-9]{9}" minlength="10" maxlength="10" title="Escriba 10 dígitos, empezando por el número 3" required
-                        aria-describedby="ayuda-celular">
-                        <br><small id="ayuda-celular">10 dígitos, debe empezar por 3. Ej:3001234567</small> 
-                    </p>
-                </fieldset>
+                        <p>
+                            <label for="documento">Documento</label><br>
+                            <input type="text" id="documento" name="documento" pattern="[0-9]{6,10}" required title="Entre 6 y 10 dígitos, solo números"
+                            aria-describedby="ayuda-documento">
+                            <br><small id="ayuda-documento">Solo números, entre 6 y qo dígitos. Ej:1020304050</small>
+                            
+                        </p>
 
-                <fieldset>
-                    <legend>Tu reserva</legend>
-                    <p>
-                        <label for="fechaalquiler">Fecha de alquiler</label><br>
-                        <input type="date" id="fechaalquiler" name="fechaalquiler" min="2026-11-01" max="2026-12-31" required>
-                    </p>
+                        <p>
+                            <label for="celular">Celular</label><br>
+                            <input type="tel" id="celular" name="celular" autocomplete="tel" inputmode="numeric" pattern="3[0-9]{9}" minlength="10" maxlength="10" title="Escriba 10 dígitos, empezando por el número 3" required
+                            aria-describedby="ayuda-celular">
+                            <br><small id="ayuda-celular">10 dígitos, debe empezar por 3. Ej:3001234567</small> 
+                        </p>
+                    </fieldset>
 
-                    <p>
-                        <label for="tipo">Tipo de bicicleta</label><br>
-                        <select name="tipo" id="tipo" required>
-                            <option value="">Selecciona una opción</option>
-                            <option value="urbana">Urbana</option>
-                            <option value="montana">Montaña</option>
-                            <option value="electrica">Eléctrica</option>
-                        </select>
-                    </p>
-                </fieldset>
+                    <fieldset>
+                        <legend>Tu reserva</legend>
+                        <p>
+                            <label for="fechaalquiler">Fecha de alquiler</label><br>
+                            <input type="date" id="fechaalquiler" name="fechaalquiler" min="2026-11-01" max="2026-12-31" required>
+                        </p>
 
-                <fieldset>
-                    <legend>Plan</legend>
-                    <p>
-                        <input type="radio" name="plan" id="plan-facil" value="2h" required>
-                        <label for="plan-facil">2 horas</label>
-                    </p>
-                    <p>
-                        <input type="radio" name="plan" id="plan-medio" value="3h" required>
-                        <label for="plan-medio">3 horas</label>
-                    </p>
-                    <p>
-                        <input type="radio" name="plan" id="plan-medio" value="4h" required>
-                        <label for="plan-dificil">4 horas</label>
-                    </p>
-                </fieldset>
+                        <p>
+                            <label for="tipo">Tipo de bicicleta</label><br>
+                            <select name="tipo" id="tipo" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="urbana">Urbana</option>
+                                <option value="montana">Montaña</option>
+                                <option value="electrica">Eléctrica</option>
+                            </select>
+                        </p>
+                    </fieldset>
 
-                <fieldset>
-                    <legend>Confirmación</legend>
-                    <p>
-                        <label for="comentarios">Comentarios (opcional)</label><br>
-                        <textarea name="comentarios" id="comentarios" rows="4" maxlength="300"></textarea>
-                    </p>
+                    <fieldset>
+                        <legend>Plan</legend>
+                        <p>
+                            <input type="radio" name="plan" id="plan-facil" value="2h" required>
+                            <label for="plan-facil">2 horas</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="plan" id="plan-medio" value="3h" required>
+                            <label for="plan-medio">3 horas</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="plan" id="plan-medio" value="4h" required>
+                            <label for="plan-dificil">4 horas</label>
+                        </p>
+                    </fieldset>
 
-                    <p>
-                        <input type="checkbox" id="terminos" name="terminos" required>
-                        <label for="terminos">Acepto los términos y condiciones</label>
-                    </p>
+                    <fieldset>
+                        <legend>Confirmación</legend>
+                        <p>
+                            <label for="comentarios">Comentarios (opcional)</label><br>
+                            <textarea name="comentarios" id="comentarios" rows="4" maxlength="300"></textarea>
+                        </p>
 
-                    <button type="submit">Enviar reserva</button>
-                </fieldset>
-                
-                
-            </form> 
+                        <p>
+                            <input type="checkbox" id="terminos" name="terminos" required>
+                            <label for="terminos">Acepto los términos y condiciones</label>
+                        </p>
+
+                        <button type="submit">Enviar reserva</button>
+                    </fieldset>
+                    
+                    
+                </form> 
+            </article>
+            <article>
+
+            <aside aria-labelledby="horario">
+                <dl class="horario">
+                    <h2>Horarios</h2>
+                    <dt><strong>Lunes a viernes</dt>
+                    <dd>De 7:00 a.m. a 7:00 p.m.</dd>
+                    <dt>Sábados, domingos y festivos</dt>
+                    <dd>De 6:00 a.m. a 2:00 p.m.</strong></dd>
+                </dl>
+                <h2>Contacto</h2>
+                <div class="contactodiv">
+                    <p><a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a></p>
+                    <p><a href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer">Whatsapp</a></p>
+                </div>
+            </aside>
+            </article>
+
         </section>
 
     </main>
+
     
 
     <footer>            
@@ -144,5 +157,6 @@
         target="_blank" rel="noopener noreferrer"
         aria-label="WhatsApp (se abre en una pestaña nueva)">WhatsApp</a>
     </footer>
+
 </body>
 </html>

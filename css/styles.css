@@ -117,16 +117,16 @@ legend {
     padding: 0 var(--spacing-sm);
 }
 
-input [type="text"],
-input [type="email"],
-input [type="tel"],
-input [type="date"],
-input [type="time"],
-input [type="number"],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
 select,
 textarea {
     width: 100%;
-    max-width: 30rem;
+    max-width: 1000px;
     padding: var(--spacing-sm);
     box-sizing: border-box;
     border: 1px solid var(--color-gris-asfalto);
@@ -156,16 +156,19 @@ textarea {
     margin: 0;
     padding: var(--spacing-sm);
     background-color:  var(--color-crema);
+    border-radius: 0.75rem;
 }
 
 #menu a:hover{
     background-color: var(--color-naranja-pedal);
     color: var(--color-azul-noche);
+    border-radius: 0.75rem;
 }
 
 #menu a:focus {
     outline: 3px solid var(--color-azul-noche);
     outline-offset: 2px;
+    border-radius: 0.75rem;
 }
 
 .boton-cta {
@@ -274,6 +277,7 @@ table {
     margin-bottom: var(--spacing-lg);
 }
 
+
 caption {
     text-align: left;
     font-weight: 700;
@@ -366,6 +370,8 @@ footer {padding-bottom: 5rem;}
     border-radius: 0.75rem;
     background-color: var(--color-blanco);
     color: #14213D;
+    justify-content: space-around;
+    flex-direction: column;
 
 }
 
@@ -382,4 +388,36 @@ footer {padding-bottom: 5rem;}
     background-color: var(--color-verde-ruta);
     border-radius: 0.75rem;
     padding: var(--spacing-sm);
+}
+
+.quienes_somos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.quienes_somos img {
+    border-radius: 0.75rem;
+}
+
+.reservascolumnas {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.reservascolumnas a {
+    color: var(--color-verde-ruta);
+}
+
+.reservascolumnas label {
+    margin-bottom: 0;
+}
+
+.reservascolumnas h2 {
+    text-align: center;
+}
+
+.contactodiv {
+    text-align: center;
 }
