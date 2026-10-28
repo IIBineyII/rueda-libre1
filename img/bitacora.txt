@@ -171,5 +171,10 @@ Reto 2:Aprendí a organizar el HTML como se debe, con cada bloque, sección, art
 Reto 3:Aprendí a darle uso a CSS dándole uso a las clases e id para modificar el estilo en las páginas.
 
 
+Semana 2:
+Reto 1:
+He usado la IA para definir algunos conceptos como la diferencia entre display:Block y display:flex
 
+Al reducir la margen desde el toogle device toolbar y la página completa tiene la interfaz de pc, por tanto el texto e imagenes se ven muy pequeños, por el momento ninguna sección se deforma o sobrepone en otra. 
 
+En el ejercicio de "Nuestra flota": las medidas de las columnas fueron de 960x1359.938

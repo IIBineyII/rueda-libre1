@@ -343,6 +343,7 @@ button[type="submit"] {
     font-size: 700;
     cursor: pointer;
     color: var(--color-blanco);
+    border-radius: 0.75rem;
 }
 
 footer {padding-bottom: 5rem;}
@@ -354,4 +355,31 @@ footer {padding-bottom: 5rem;}
 
 .introduccion {
     margin: 0 auto;
+}
+
+.flota {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    gap: 25px;
+    padding: auto;
+    border: 1px solid;
+    border-radius: 0.75rem;
+    background-color: var(--color-blanco);
+    color: #14213D;
+
+}
+
+.flota img {
+    border-radius: 0.75rem;
+}
+
+.flota article {
+    padding: var(--spacing-md);
+}
+
+.boton-flota {
+    color: var(--color-blanco);
+    background-color: var(--color-verde-ruta);
+    border-radius: 0.75rem;
+    padding: var(--spacing-sm);
 }
