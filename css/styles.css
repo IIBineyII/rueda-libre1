@@ -52,11 +52,12 @@ small {
     color: var(--color-gris-asfalto);
 }
 
-header,
+
 footer {
     background-color: var(--color-azul-noche);
     color: var(--color-blanco);
     padding: var(--spacing-lg); 
+    
 }
 
 
@@ -67,7 +68,7 @@ footer a, .contacto a {
 }
     
 
-main {
+main > section:not(#portadaicono) {
     padding: var(--spacing-1g);
     max-width: 60rem;
     margin: 0 auto;
@@ -165,7 +166,6 @@ textarea {
 }
 
 .boton-cta {
-    display: inline-block;
     background-color: var(--color-verde-ruta);
     color: var(--color-blanco);
     font-family: var(--font-heading);
@@ -210,19 +210,41 @@ button:focus {
     color: var(--color-verde-ruta);
 }
 
-.portada {
-    min-height: 60hv;
+header {
+        background-color: var(--color-azul-noche);
+    color: var(--color-blanco);
+    padding: var(--spacing-lg); 
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
 }
 
-header img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    height: 400px;
-    object-fit: cover;
+
+.marca {
+    color: var(--color-blanco);
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
 }
+
+.marca:hover {
+    text-decoration: underline;
+}
+
+#portadaicono {
+    min-height: 50vh;
+    background-color: var(--color-azul-noche);
+    color: var(--color-azul-noche);
+}
+
+#portadaicono img {
+    display: block;
+    width: 500px;
+    margin: auto;
+} 
 
 .tarjeta {
     width: 100%;
@@ -321,3 +343,11 @@ button[type="submit"] {
 
 footer {padding-bottom: 5rem;}
 
+.alquilar {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.introduccion {
+    margin: 0 auto;
+}
