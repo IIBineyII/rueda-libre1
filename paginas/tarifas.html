@@ -7,33 +7,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/rueda-libre1/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
 
-            <header>
-                <nav class="activo" aria-labelledby="secciontarifa">
+            <header class="portada">
+                <a class="marca" href="index.html" aria-labelledby="Rueda Libre, Ir al inicio">Rueda Libre</a>
+
+                <nav class="activo" aria-label="Principal">
                     <ul id="menu">
-                        <li><a href="/rueda-libre1/index.html"><strong>Inicio</strong></a></li>
-                        <li><a href="/rueda-libre1/paginas/tarifas.html"><strong>Tarifas y rutas</strong></a></li>
-                        <li><a href="/rueda-libre1/paginas/reservas.html"><strong>Reservas</strong></a></li>
+                        <li><a href="/index.html"><strong>Inicio</strong></a></li>
+                        <li><a href="/paginas/tarifas.html"><strong>Tarifas y rutas</strong></a></li>
+                        <li><a href="/paginas/reservas.html"><strong>Reservas</strong></a></li>
                     </ul>
                 </nav>
-                <section aria-labelledby="icono">
-                    <img src="/rueda-libre1/img/images.jpg">
-                </section>
-
-    
-                <section id="tarifas">
-                    <h1>¿Cuanto cuesta?</h1>
-                </section>
             </header>
 
     <main>
-        <a class="boton-cta" href="/rueda-libre1/paginas/reservas.html">Reservar ahora</a>
+            <section id="portadaicono" aria-labelledby="titulo-inicio">
+                <img src="/img/images.jpg">
+                <h1>¿Cuanto cuesta?</h1>
+            </section>
+            <section class="introduccion" aria-labelledby="introduccion">
+                <a class="boton-cta" href="/paginas/reservas.html">Reservar ahora</a>
+            </section>
         <section aria-labelledby="tablasinfo">
-
             <aside aria-labelledby="tarifas-bicicletas">
                 <p></p>
                 <table>
@@ -113,13 +112,19 @@
 
 
         <h4>Todas las tarifas incluyen casco y candado. Los recorridos salen sábados y domingos a las 7:00 a. m. Qué llevar: ropa cómoda, agua, protector solar y documento de identidad.</h4>
-    <footer>
+    <footer>            
+            <dl class="horario">
+                <dt><strong>Lunes a viernes</dt>
+                <dd>De 7:00 a.m. a 7:00 p.m.</dd>
+                <dt>Sábados, domingos y festivos</dt>
+                <dd>De 6:00 a.m. a 2:00 p.m.</strong></dd>
+            </dl>
         <p>© 2026 Rueda Libre</p>
         <p>Rueda libre <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a> 2026</p>
         <a class="boton-whatsapp" href="https://wa.me/573000000000"
         target="_blank" rel="noopener noreferrer"
-        aria-label="WhatsApp (se abre en una pestaña nueva)">WhatsApp</a>    
-    </footer>
+        aria-label="WhatsApp (se abre en una pestaña nueva)">WhatsApp</a>
 
+    </footer>
 </body>
 </html>

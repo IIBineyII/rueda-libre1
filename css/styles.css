@@ -54,10 +54,12 @@ small {
 
 
 footer {
+    display: flex;
+    
     background-color: var(--color-azul-noche);
     color: var(--color-blanco);
     padding: var(--spacing-lg); 
-    
+    justify-content: space-around;
 }
 
 
@@ -72,6 +74,7 @@ main > section:not(#portadaicono) {
     padding: var(--spacing-1g);
     max-width: 60rem;
     margin: 0 auto;
+    margin-top: var(--spacing-lg);
 }
 
 .horario {
@@ -235,9 +238,10 @@ header {
 }
 
 #portadaicono {
-    min-height: 50vh;
+    min-height: 40vh;
     background-color: var(--color-azul-noche);
     color: var(--color-azul-noche);
+    padding: var(--spacing-lg);
 }
 
 #portadaicono img {
