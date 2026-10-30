@@ -242,7 +242,7 @@ header {
 
 #portadaicono {
     min-height: 40vh;
-    background-color: var(--color-azul-noche);
+    background-color: var(--color-azul-noche);  
     color: var(--color-azul-noche);
     padding: var(--spacing-lg);
 }
