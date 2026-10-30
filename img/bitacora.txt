@@ -192,3 +192,5 @@ Pie: Usé el grid para dividir por secciones (Horarios, copyright Rueda libe y c
 Problemas al ajustar medidas:
 Celular y tablet: Al momento de visualizar el menú, el footer, la sección flota, el formulario y horario se veían con vista de pc debido a las medidas que estaban en css, se ajustaron por default y en las de 768px y 1200px.
 
+Arreglos: Arreglé el tamaño de imagenes y que no hubiese desplazamiento horizontal en menores resoluciones.
+
